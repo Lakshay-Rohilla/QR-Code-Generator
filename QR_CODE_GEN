@@ -1,0 +1,11 @@
+import qrcode as qr
+img =qr.make("https://www.linkedin.com/in/lakshay-rohilla07/")
+img.save("Linkedin_Qr_Code.png")
+
+def qr_code_gen():
+    import qrcode as qr
+    img = qr.make(input("Enter the link: "))
+    file_name= (input("Enter the name of the image: "))
+    img.save(file_name+".png")
+
+qr_code_gen()
